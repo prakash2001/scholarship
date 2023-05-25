@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<style>
+    .errorMail{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Sign-in Form</header>
+        <form action="#">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" onblur="validateEmail()" placeholder="Email Address" id="mail_id">
+                    <p class="errorMail" id="errorMsg">Invalid Email ID</p>
+                    <i class="icon fas fa-envelope"></i>
+                    </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Password">
+                    <i class="icon fas fa-lock"></i>
+                     </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Re-type-Password">
+                    <i class="icon fas fa-unlock"></i>
+                     </div>
+            </div>
+          
+            <input type="submit" value="Sign-Up">
+           
+        </form>
+        <div class="sign-txt">Alread member? <a href="login.html">Sign-in now</a></div>
+    </div>
+    </div>
+<script src="signupscript.js"></script>
+
+</body>
+
+</html>
